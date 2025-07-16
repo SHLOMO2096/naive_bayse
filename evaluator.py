@@ -1,3 +1,4 @@
+
 class Evaluator:
     def evaluate_sample(self, classifier, record, true_label):
         predicted = classifier.classify(record)
@@ -8,6 +9,7 @@ class Evaluator:
             print(f"Incorrectly classified: {record} as {predicted}, expected {true_label}")
             return False
 
+
     def evaluate(self, classifier, test_df, target_column):
         correct_predictions = 0
         total_predictions = len(test_df)
@@ -17,5 +19,5 @@ class Evaluator:
             if predicted == row[target_column]:
                 correct_predictions += 1
         accuracy = correct_predictions / total_predictions
-        print(f"Accuracy: {correct_predictions}/{total_predictions} ({(correct_predictions / total_predictions) * 100:.2f}%)")
-        return accuracy
+        return f"Accuracy: {correct_predictions}/{total_predictions} ({(correct_predictions / total_predictions) * 100:.2f}%)"
+        # return accuracy
