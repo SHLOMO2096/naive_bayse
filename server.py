@@ -1,7 +1,6 @@
 import pandas as pd
 from io import StringIO
 from fastapi import FastAPI, UploadFile, File, Body, Form
-from typing_inspection.typing_objects import target
 
 from naive_bayes_classifier import NaiveBayesClassifier
 from data_procesor import DataProcessor
@@ -19,8 +18,7 @@ async def read_root():
 
 @app.post("/upload_csv/")
 async def upload_csv(file: UploadFile, target_column: str = Form(...)):
-    global train_df, test_df
-    global target
+    global train_df, test_df, target
     contents = await file.read()
 
     if not contents:
