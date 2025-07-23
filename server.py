@@ -1,9 +1,11 @@
+import pickle
 import pandas as pd
-from fastapi import FastAPI, Body
+from fastapi import FastAPI, Body, requests
 
 from naive_bayes_classifier import NaiveBayesClassifier
 from data_procesor import DataProcessor
 from evaluator import Evaluator
+from predictor.predictor_server import model
 
 app = FastAPI()
 df = pd.read_csv("data.csv")
@@ -13,7 +15,7 @@ target = df.columns[-1]
 processor = DataProcessor(df)
 processor.clean_data()
 train_df, test_df = processor.split_data()
-
+Trained_model = None
 
 @app.on_event("startup")
 async def read_root():
@@ -24,10 +26,19 @@ async def read_root():
     }
 @app.on_event("startup")
 async def train_model():
+    global Trained_model
     if train_df is None:
         return {"error": "Load and clean data first!"}
     classifier.fit(train_df, target)
-    return {"message": "Model trained successfully."}
+    Trained_model = classifier.model
+    # return {"message": "Model trained successfully."}
+
+@app.get("/get_model/")
+async def get_model():
+    global Trained_model
+    if Trained_model is None:
+        return {"error": "Model not trained yet!"}
+    return {Trained_model}
 
 @app.on_event("startup")
 async def evaluate_model():
@@ -37,10 +48,6 @@ async def evaluate_model():
     results = evaluator.evaluate(classifier, test_df, target)
     return {"evaluation_results": results}
 
-@app.post("/classify_record/")
-async def classify_record(record: dict = Body(...)):
-    prediction = classifier.classify(record)
-    return {"prediction": prediction}
 
 
 

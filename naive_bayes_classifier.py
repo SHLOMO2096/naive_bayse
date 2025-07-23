@@ -10,6 +10,7 @@ class NaiveBayesClassifier:
         feature_cols = df.drop(columns=[target_column],axis=1)
         self.classes = target_variable.unique()
         self.priors = df[target_column].value_counts(normalize=True).to_dict()
+        self.model["priors"] = self.priors
 
         for col in feature_cols:
             self.model[col] = {}
@@ -27,16 +28,8 @@ class NaiveBayesClassifier:
                 self.model[col][value][f'P({self.classes[1]}|X)'] = no_count / total_no
 
 
-    def classify(self, record):
-        prob_yes = self.priors[self.classes[0]]
-        prob_no = self.priors[self.classes[1]]
 
-        for col in record:
-            value = record[col]
-            if value in self.model[col]:
-                prob_yes *= self.model[col][value][f'P({self.classes[0]}|X)']
-                prob_no *= self.model[col][value][f'P({self.classes[1]}|X)']
-        return self.classes[0] if prob_yes > prob_no else self.classes[1]
+
 
 
 
