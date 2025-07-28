@@ -1,11 +1,9 @@
-import pickle
 import pandas as pd
-from fastapi import FastAPI, Body, requests
+from fastapi import FastAPI
 
 from naive_bayes_classifier import NaiveBayesClassifier
 from data_procesor import DataProcessor
 from evaluator import Evaluator
-from predictor.predictor_server import model
 
 app = FastAPI()
 df = pd.read_csv("data.csv")
@@ -31,6 +29,7 @@ async def train_model():
         return {"error": "Load and clean data first!"}
     classifier.fit(train_df, target)
     Trained_model = classifier.model
+    print("Model trained successfully.")
     # return {"message": "Model trained successfully."}
 
 @app.get("/get_model/")
@@ -38,7 +37,8 @@ async def get_model():
     global Trained_model
     if Trained_model is None:
         return {"error": "Model not trained yet!"}
-    return {Trained_model}
+    print("Model retrieved successfully.")
+    return Trained_model
 
 @app.on_event("startup")
 async def evaluate_model():
@@ -46,8 +46,11 @@ async def evaluate_model():
         return {"error": "Load and clean data first!"}
     evaluator = Evaluator()
     results = evaluator.evaluate(classifier, test_df, target)
+    print(results)
     return {"evaluation_results": results}
 
 
-
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="127.0.0.1", port=8000)
 

@@ -27,6 +27,20 @@ class NaiveBayesClassifier:
                 self.model[col][value][f'P({self.classes[0]}|X)'] = yes_count / total_yes
                 self.model[col][value][f'P({self.classes[1]}|X)'] = no_count / total_no
 
+    def classify(self, record):
+        priors = self.model["priors"]
+        classes = list(priors.keys())
+
+        probs = {cls: priors[cls] for cls in classes}
+
+        for col in record:
+            value = record[col]
+            for cls in classes:
+                try:
+                    probs[cls] *= self.model[col][value][f'P({cls}|X)']
+                except KeyError:
+                    probs[cls] *= 1e-6
+        return max(probs, key=probs.get)
 
 
 

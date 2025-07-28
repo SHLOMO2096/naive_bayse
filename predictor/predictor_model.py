@@ -1,14 +1,3 @@
-import pickle
-
-
-
-
-def load(self,path):
-    with open(path, "rd") as f:
-        saved = pickle.load(f)
-        self.model = saved["model"]
-
-
 def classify(model, record):
     priors = model["priors"]
     classes = list(priors.keys())

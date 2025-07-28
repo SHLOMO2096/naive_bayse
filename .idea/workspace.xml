@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="end v1">
+    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="temporary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/naive_bayes_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_procesor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_procesor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/predictor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/predictor_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +68,22 @@
     "Python.menu.executor": "Run",
     "Python.model.executor": "Run",
     "Python.naive_bayes_classifier.executor": "Run",
+    "Python.predictor_server.executor": "Run",
     "Python.server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "v2",
-    "last_opened_file_path": "C:/Users/shlomo/PycharmProjects/bayes_nave"
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/shlomo/PycharmProjects/bayes_nave/trainer"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave\trainer" />
+      <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave\predictor" />
       <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave\trainer" />
       <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave\predictor" />
     </key>
   </component>
