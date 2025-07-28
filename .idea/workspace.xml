@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="new commit">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/predictor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/predictor_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/data_procesor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_procesor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/evaluator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trainer/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/server.py" afterDir="false" />
-    </list>
+    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="new commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
