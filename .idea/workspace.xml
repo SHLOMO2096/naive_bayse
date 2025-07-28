@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="temporary">
+    <list default="true" id="850b5d2f-4682-4abf-8294-44906d40fddb" name="Changes" comment="new commit">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_procesor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_procesor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/evaluator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictor/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictor/predictor_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predictor/predictor_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/predictor_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predictor/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/predictor/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/data_procesor.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/data_procesor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/evaluator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/naive_bayes_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainer/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainer/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,24 +60,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "Python.client.executor": "Run",
-    "Python.data_procesor.executor": "Run",
-    "Python.evaluator.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.menu.executor": "Run",
-    "Python.model.executor": "Run",
-    "Python.naive_bayes_classifier.executor": "Run",
-    "Python.predictor_server.executor": "Run",
-    "Python.server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "v2",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/shlomo/PycharmProjects/bayes_nave/trainer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.client.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_procesor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evaluator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.menu.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.naive_bayes_classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predictor_server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v2&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/shlomo/PycharmProjects/bayes_nave/trainer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shlomo\PycharmProjects\bayes_nave\trainer" />
@@ -159,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753190026913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="new commit">
+      <option name="closed" value="true" />
+      <created>1753691531647</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753691531647</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -167,6 +177,7 @@
     <MESSAGE value="commit2" />
     <MESSAGE value="last" />
     <MESSAGE value="end v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="end v1" />
+    <MESSAGE value="new commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
   </component>
 </project>
